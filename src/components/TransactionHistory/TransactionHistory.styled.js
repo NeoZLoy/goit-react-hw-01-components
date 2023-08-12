@@ -8,4 +8,8 @@ width: 400px;
 border: 1px solid black
 `
 
-export {TransactionSection}
+const Table = styled.table`
+width: 100%
+`
+
+export {TransactionSection, Table}

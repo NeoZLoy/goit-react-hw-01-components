@@ -1,16 +1,16 @@
 import { TransactionHeader } from "./TransactionHeader/TransactionHeader"
 import { TransactionList } from "./TransactionList/TransactionList"
 import transactions from "../../data/transactions"
-import { TransactionSection } from "./TransactionHistory.styled"
+import { TransactionSection, Table } from "./TransactionHistory.styled"
 
 export const TransactionHistory = () => {
     return (
         <TransactionSection>
-            <table>
+            <Table>
                 <TransactionHeader/>
                 <TransactionList transactions = {transactions}/>
                
-            </table>
+            </Table>
         </TransactionSection>
     )
 }

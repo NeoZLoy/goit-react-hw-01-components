@@ -8,13 +8,10 @@ font-size: 18px;
 
 const TableBody = styled.tbody`
 
-:nth-child(odd){
-    background-color: tomato;
+tr:nth-child(odd){
+    background-color: #8C8C8C;
 }
 
-:nth-child(even){
-    background-color: #fff;
-}
 
 `
 
