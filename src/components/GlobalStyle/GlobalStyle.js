@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
+import "modern-normalize"
 
-export const GlobalStyled = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
 
 * {
     vertical-align: baseline;
@@ -13,32 +14,20 @@ export const GlobalStyled = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
-
-  :root {
-    --color-black: #111111;
-    --color-violet: #1e1823;
-    --color-orange: #fd9222;
-    --color-white: #fafafa;
-    --color-white-secondary: #fff;
+  
   }
-
-    body {
+  body {
     margin: 0;
     padding: 0;
-    background-color: var(--color-white);
-  color: var(--color-black);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(18 / 14);
-  letter-spacing: -0.02em;
-  padding: 0;
+    background-color: #CCCCCC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    letter-spacing: -0.02em;
+    padding: 0;
   }
-  
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
-  }
+
 
   ul{
     list-style: none;
@@ -62,4 +51,11 @@ export const GlobalStyled = createGlobalStyle`
     margin: 0;
     padding: 0;
   }
+
+  section {
+    width: 100%;
+    margin: 0 auto;
+    bargin-bottom: 20px;
+  }
+  
 `

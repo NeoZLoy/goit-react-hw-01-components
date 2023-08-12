@@ -1,5 +1,7 @@
+import { StatsTitle } from "./UploadHead.styled"
+
 export const UploadHead = () => {
     return(
-        <h2>Upload Stats</h2>
+        <StatsTitle>Upload Stats</StatsTitle>
     )
 }

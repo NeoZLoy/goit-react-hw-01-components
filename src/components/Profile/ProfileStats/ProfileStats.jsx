@@ -1,18 +1,20 @@
+import { StatsList, StatsItem, StatsTitle, StatsQuantity } from "./ProfileStats.styled"
+
 export const ProfileStats = ({stats}) => {
     return (
-        <ul>
-            <li>
-                <span>Followers</span>
-                <span>{stats.followers}</span>
-            </li>
-            <li>
-                <span>Views</span>
-                <span>{stats.views}</span>
-            </li>
-            <li>
-                <span>Likes</span>
-                <span>{stats.likes}</span>
-            </li>
-        </ul>
+        <StatsList>
+            <StatsItem>
+                <StatsTitle>Followers</StatsTitle>
+                <StatsQuantity>{stats.followers}</StatsQuantity>
+            </StatsItem>
+            <StatsItem>
+                <StatsTitle>Views</StatsTitle>
+                <StatsQuantity>{stats.views}</StatsQuantity>
+            </StatsItem>
+            <StatsItem>
+                <StatsTitle>Likes</StatsTitle>
+                <StatsQuantity>{stats.likes}</StatsQuantity>
+            </StatsItem>
+        </StatsList>
     )
 }

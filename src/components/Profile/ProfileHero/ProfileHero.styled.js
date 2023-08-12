@@ -1,16 +1,33 @@
 import styled from 'styled-components'
 
 const ProfileDiv = styled.div`
-margin: 0 auto;
-width: 400px;
-background-color: tomato;
+padding: 10px;
+background-color: #fff;
 `
 
 const ProfileImg = styled.img`
-background-color: #fff;
-margin: 0 auto;
+margin-top: 18px;
+display: block;
+margin-left: auto;
+margin-right: auto;
 width: 200px;
 border-radius: 50%;
+
 `
 
-export {ProfileDiv, ProfileImg}
+const ProfileName = styled.p`
+margin-top: 18px; 
+text-align: center;
+font-size: 30px;
+font-style: bold;
+
+`
+
+const ProfileText = styled.p`
+margin-top: 12px; 
+text-align: center;
+font-size: 24px;
+color: rgba(0, 0, 0, 0.7)
+`
+
+export {ProfileDiv, ProfileImg, ProfileName, ProfileText}

@@ -1,12 +1,14 @@
+import { List, ListItem } from "./UploadList.styled"
+
 export const UploadList = ({uploadData}) => {
     return (
-        <ul>
+        <List>
             {uploadData.map(item => (
-                <li key = {item.id}>
+                <ListItem key = {item.id}>
                     <span>{item.label}</span>
                     <span>{item.percentage}%</span>
-                </li>
+                </ListItem>
             ))}
-        </ul>
+        </List>
     )
 }

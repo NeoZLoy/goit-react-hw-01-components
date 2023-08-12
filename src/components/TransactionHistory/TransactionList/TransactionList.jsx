@@ -1,13 +1,15 @@
+import { TableRow, TableData,  TableBody} from "./TransactionList.styled"
+
 export const TransactionList = ({transactions}) => {
     return (
-        <tbody>
+        <TableBody>
             {transactions.map(transaction => (
-                <tr key = {transaction.id}>
-                    <td>{transaction.type}</td>
-                    <td>{transaction.amount}</td>
-                    <td>{transaction.currency}</td>
-                </tr>
+                <TableRow key = {transaction.id}>
+                    <TableData>{transaction.type}</TableData>
+                    <TableData>{transaction.amount}</TableData>
+                    <TableData>{transaction.currency}</TableData>
+                </TableRow>
             ))}
-        </tbody>
+        </TableBody>
     )
 }

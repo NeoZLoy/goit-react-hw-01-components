@@ -1,10 +1,12 @@
+import { TableHeader} from "./TransactionHeader.styled"
+
 export const TransactionHeader = () => {
     return (
         <thead>
              <tr>
-                <th>Type</th>
-                <th>Amount</th>
-                <th>Currency</th>
+                <TableHeader>Type</TableHeader>
+                <TableHeader>Amount</TableHeader>
+                <TableHeader>Currency</TableHeader>
             </tr>
         </thead>
            

@@ -1,4 +1,5 @@
 import { Friends } from "./FriendList/Friends"
+import { GlobalStyle } from "./GlobalStyle/GlobalStyle"
 import { Profile } from "./Profile/Profile"
 import { Statistic } from "./Statistics/Statistic"
 import { TransactionHistory } from "./TransactionHistory/TransactionHistory"
@@ -10,6 +11,7 @@ export const App = () => {
             <Statistic/>
             <Friends/>
             <TransactionHistory/>
+            <GlobalStyle/>
         </div>
         
     )
