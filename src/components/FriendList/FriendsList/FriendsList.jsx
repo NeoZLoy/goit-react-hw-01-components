@@ -1,6 +1,8 @@
+import {List} from "./FriendsList.styled"
+
 export const FriendList = ({friends}) => {
     return (
-        <ul>
+        <List>
             {friends.map(friend => (
                 <li key = {friend.id}>
                     <span>{friend.isOnline}</span>
@@ -8,6 +10,6 @@ export const FriendList = ({friends}) => {
                     <p>{friend.name}</p>
                 </li>
             ))}
-        </ul>
+        </List>
     )
 }
