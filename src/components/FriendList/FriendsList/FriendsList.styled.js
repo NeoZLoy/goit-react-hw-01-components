@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
-export const List = styled.ul`
+const List = styled.ul`
 list-style: none;
 `
+
+export {List}

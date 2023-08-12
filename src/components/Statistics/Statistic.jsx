@@ -1,5 +1,5 @@
-import { UploadHead } from "./UploadHead"
-import { UploadList } from "./UploadList"
+import { UploadHead } from "./UploadHead/UploadHead"
+import { UploadList } from "./UploadList/UploadList"
 import uploadData from "../../data/data"
 
 export const Statistic = () => {

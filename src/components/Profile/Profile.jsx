@@ -1,6 +1,6 @@
-import { ProfileHero } from "./ProfileHero"
+import { ProfileHero } from "./ProfileHero/ProfileHero"
 import userData from "../../data/user"
-import { ProfileStats } from "./ProfileStats"
+import { ProfileStats } from "./ProfileStats/ProfileStats"
 
 export const Profile = () => {
     return (

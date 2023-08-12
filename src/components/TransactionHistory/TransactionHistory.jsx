@@ -1,5 +1,5 @@
-import { TransactionHeader } from "./TransactionHeader"
-import { TransactionList } from "./TransactionList"
+import { TransactionHeader } from "./TransactionHeader/TransactionHeader"
+import { TransactionList } from "./TransactionList/TransactionList"
 import transactions from "../../data/transactions"
 
 export const TransactionHistory = () => {
