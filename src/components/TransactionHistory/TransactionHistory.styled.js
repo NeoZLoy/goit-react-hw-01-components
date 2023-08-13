@@ -5,7 +5,8 @@ margin-top: 20px;
 margin-left: auto;
 margin-right: auto;
 width: 400px;
-border: 1px solid black
+border: 1px solid black;
+margin-bottom: 18px;
 `
 
 const Table = styled.table`
