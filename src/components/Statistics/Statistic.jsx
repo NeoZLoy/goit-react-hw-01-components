@@ -1,13 +1,19 @@
-import { UploadHead } from "./UploadHead/UploadHead"
-import { UploadList } from "./UploadList/UploadList"
-import uploadData from "../../data/data"
-import { StatisticSection } from "./Statistic.styled"
+import { StatisticSection, StatsTitle, List, ListItem } from "./Statistic.styled"
 
-export const Statistic = () => {
+export const Statistic = ({uploadData, title}) => {
     return (
         <StatisticSection>
-            <UploadHead/>
-            <UploadList uploadData = {uploadData}/>
+            {title.length > 0 &&(
+                <StatsTitle title = {title}>{title}</StatsTitle>
+            )}
+            <List>
+            {uploadData.map(item => (
+                <ListItem key = {item.id}>
+                    <span>{item.label}</span>
+                    <span>{item.percentage}%</span>
+                </ListItem>
+            ))}
+        </List>
         </StatisticSection>
     )
 }

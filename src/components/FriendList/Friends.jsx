@@ -1,11 +1,15 @@
-import { FriendList } from "./FriendsList/FriendsList"
-import friends from "../../data/friends"
-import { FriendsWrapper } from "./Friends.styled"
-
-export const Friends = () => {
+import { FriendsWrapper, List, ListItem  } from "./Friends.styled"
+import { FriendItem,  } from "./FriendItem/FriendItem"
+export const Friends = ({friends}) => {
     return (
         <FriendsWrapper>
-            <FriendList friends = {friends} />
+            <List>
+            {friends.map(friend => (
+                <ListItem key = {friend.id}>
+                   <FriendItem friend={friend}/>
+                </ListItem>
+            ))}
+        </List>
         </FriendsWrapper>
     )
 }

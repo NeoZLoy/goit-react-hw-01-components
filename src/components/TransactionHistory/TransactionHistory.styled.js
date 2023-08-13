@@ -12,4 +12,26 @@ const Table = styled.table`
 width: 100%
 `
 
-export {TransactionSection, Table}
+const TableHeader = styled.th`
+padding: 8px;
+background-color: #3890B9;
+font-size: 24px;
+font-weight: 600;
+`
+
+const TableRow = styled.tr`
+font-size: 18px;
+`
+
+const TableBody = styled.tbody`
+tr:nth-child(odd){
+    background-color: #8C8C8C;
+}
+`
+
+const TableData = styled.td`
+padding: 10px;
+`
+
+
+export {TransactionSection, Table, TableHeader, TableRow, TableData, TableBody}

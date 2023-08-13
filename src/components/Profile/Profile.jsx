@@ -1,13 +1,28 @@
-import { ProfileHero } from "./ProfileHero/ProfileHero"
-import userData from "../../data/user"
-import { ProfileStats } from "./ProfileStats/ProfileStats"
-import {ProfileSection} from './Profile.styled'
+import {ProfileSection, ProfileDiv, ProfileImg, ProfileName, ProfileText, StatsList, StatsItem, StatsTitle, StatsQuantity} from './Profile.styled'
 
-export const Profile = () => {
+export const Profile = ({userData}) => {
     return (
         <ProfileSection>
-            <ProfileHero userData = {userData}/>
-            <ProfileStats stats = {userData.stats}/>
+            <ProfileDiv>
+                <ProfileImg src={userData.avatar} alt="User avatar" />
+                <ProfileName>{userData.username}</ProfileName>
+                <ProfileText>@{userData.tag}</ProfileText>
+                <ProfileText>{userData.location}</ProfileText>
+            </ProfileDiv>
+            <StatsList>
+                <StatsItem>
+                    <StatsTitle>Followers</StatsTitle>
+                    <StatsQuantity>{userData.stats.followers}</StatsQuantity>
+                </StatsItem>
+                <StatsItem>
+                    <StatsTitle>Views</StatsTitle>
+                    <StatsQuantity>{userData.stats.views}</StatsQuantity>
+                </StatsItem>
+                <StatsItem>
+                    <StatsTitle>Likes</StatsTitle>
+                    <StatsQuantity>{userData.stats.likes}</StatsQuantity>
+                </StatsItem>
+        </StatsList>
         </ProfileSection>
     
     )
